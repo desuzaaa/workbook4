@@ -17,5 +17,5 @@ for (let index = 0; index < lunch.length; index++) {
 let tax = 0.08;
 let tip = 0.18;
 
-let totalDue = total + tax + tip 
-console.log(totalDue);
+let subTotal = total + tax + tip 
+console.log(subTotal);
