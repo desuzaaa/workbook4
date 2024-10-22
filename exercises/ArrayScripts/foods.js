@@ -14,8 +14,8 @@ for (let index = 0; index < lunch.length; index++) {
     total  = total + element.price 
 }
 
-let tax = 0.08;
-let tip = 0.18;
+let tax = 0.08 * total;
+let tip = 0.18 * total;
 
-let subTotal = total + tax + tip 
+let subTotal = total + tax 
 console.log(subTotal);
