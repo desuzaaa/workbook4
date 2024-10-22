@@ -6,9 +6,16 @@ let lunch = [
   { item: "Sweet Tea", price: 2.79 },
 ];
 
+
 let total = 0;
 
 for (let index = 0; index < lunch.length; index++) {
     const element = lunch[index];
-    total  = total + element.price
+    total  = total + element.price 
 }
+
+let tax = 0.08;
+let tip = 0.18;
+
+let totalDue = total + tax + tip 
+console.log(totalDue);
