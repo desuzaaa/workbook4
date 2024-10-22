@@ -1,3 +1,5 @@
+"use strict";
+
 let students = [
   { name: "Zephaniah", scores: [100, 96, 99, 92] },
   { name: "Pursalane", scores: [92, 89, 96, 100, 94] },
@@ -7,13 +9,17 @@ let students = [
   { name: "Ezra", scores: [100, 99, 100, 87] },
 ];
 
-for (student of students) {
-  let average = 0;
 
-  for (let index = 0; index < student.scores.length; index++) {
-    const average = average + student.scores[index];
-  }
-  average = average / student.scores.length;
+let student; 
+for (student of students){
+let score;
+let average = 0;
+
+for (score of student.scores){
+  average = average + score;
 }
 
+average = (average / student.scores.length)
 console.log(student.name, average);
+
+}
