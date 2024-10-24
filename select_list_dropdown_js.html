@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Dropdown Exercise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="card border rounded">
+        <form>
+          <label for="nbaTeams" class="form-label">States</label>
+          <select class="form-select" id="nbaTeams">
+            <option value="">Select!</option>
+          </select>
+        </form>
+      </div>
+    </main>
+    <script>
+      "use strict";
+
+      const nbaFranchises = [
+        { id: 1, name: "Atlanta Hawks" },
+        { id: 2, name: "Boston Celtics" },
+        { id: 3, name: "Brooklyn Nets" },
+        { id: 4, name: "Charlotte Hornets" },
+        { id: 5, name: "Chicago Bulls" },
+        { id: 6, name: "Cleveland Cavaliers" },
+        { id: 7, name: "Dallas Mavericks" },
+        { id: 8, name: "Denver Nuggets" },
+        { id: 9, name: "Detroit Pistons" },
+        { id: 10, name: "Golden State Warriors" },
+        { id: 11, name: "Houston Rockets" },
+        { id: 12, name: "Indiana Pacers" },
+        { id: 13, name: "Los Angeles Clippers" },
+        { id: 14, name: "Los Angeles Lakers" },
+        { id: 15, name: "Memphis Grizzlies" },
+        { id: 16, name: "Miami Heat" },
+        { id: 17, name: "Milwaukee Bucks" },
+        { id: 18, name: "Minnesota Timberwolves" },
+        { id: 19, name: "New Orleans Pelicans" },
+        { id: 20, name: "New York Knicks" },
+        { id: 21, name: "Oklahoma City Thunder" },
+        { id: 22, name: "Orlando Magic" },
+        { id: 23, name: "Philadelphia 76ers" },
+        { id: 24, name: "Phoenix Suns" },
+        { id: 25, name: "Portland Trail Blazers" },
+        { id: 26, name: "Sacramento Kings" },
+        { id: 27, name: "San Antonio Spurs" },
+        { id: 28, name: "Toronto Raptors" },
+        { id: 29, name: "Utah Jazz" },
+        { id: 30, name: "Washington Wizards" },
+      ];
+
+
+      let nbaTeams = document.getElementById("nbaTeams")
+
+ for (const franchise of nbaFranchises) {
+    let option = document.createElement("option")
+    option.value = franchise.id
+    option.innerText = franchise.name
+    nbaTeams.appendChild(option);
+    
+ }
+    </script>
+  </body>
+</html>
