@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Exercise</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  </head>
+  <body>
+       <main class="container mt-4">
+      <div class="card p-4 bg-body-tertiary w-50">
+        <form class="w-25">
+          <div class="mb-3">
+            <label for="teamSelect" class="form-label">States</label>
+            <select class="form-select" id="teamSelect">
+              <option value="">Select...</option>
+            </select>
+          </div>
+          <button onclick="showDetails()" type="button" class="btn btn-outline-secondary">Show Details</button>
+        </form>
+      </div>
+
+      <div id="detailsDiv" class="card p-4 w-50 bg-body-tertiary mt-4"></div>
+    </main>
+  </body>
+  <script src="Scripts/main.js"></script>
+</html>
