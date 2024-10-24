@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Dropdown Exercise</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <label for="nbaSelect" class="form-label">NBA Teams</label>
+        <select class="form-select" id="nbaSelect">
+        <option value="">Select!</option>
+        <!-- <option value="1">Chicago Bulls</option>
+        <option value="2">Orlando Magic</option>
+        <option value="3">Utah Jazz</option>
+        </select> -->
+    </main>
+    <script>
+      let nbaSelect = document.getElementById("nbaSelect");
+
+      let option1 = document.createElement("option");
+      option1.value = "1";
+      option1.innerText = "Chicago Bulls";
+      nbaSelect.appendChild(option1);
+
+      let option2 = document.createElement("option");
+      option2.value = "2";
+      option2.innerText = "Orlando Magic";
+      nbaSelect.appendChild(option2);
+
+      let option3 = document.createElement("option");
+      option3.value = "3";
+      option3.innerText = "Utah Jazz";
+      nbaSelect.appendChild(option3);
+    </script>
+    <footer>
+    </footer>
+  </body>
+</html>
